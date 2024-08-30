@@ -1,4 +1,18 @@
+@media (max-width: 1199px) {
+    .wrapper, 
+    .slides .slide,
+    .slide-caption .slide {
+        width: 70vw;
+    }
+}
+
 @media screen and (max-width: 767px) {
+
+    .wrapper, 
+    .slides .slide,
+    .slide-caption .slide {
+        width: calc(100vw - 5rem);
+    }
 
 	.slider-container {
 		grid-template-areas:
@@ -7,10 +21,17 @@
 			'description';
 	}
 
+    .slider-bottom {
+        order: 2;
+    }
+
 	.navigation {
 		justify-content: center;
 	}
 
+    .slide-caption {
+        margin: 1rem 0;
+    }
 
 	.slide-caption .slide {
 		text-align: center;

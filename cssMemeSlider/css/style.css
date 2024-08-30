@@ -1,5 +1,10 @@
+.wrapper, 
+    .slides .slide,
+    .slide-caption .slide {
+        width: 40vw;
+    }
+
 .wrapper {
-	width: 30vw;
 	background: #4a4848;
 	padding: 20px;
 	margin: 0 auto;
@@ -31,7 +36,6 @@
 
 .slides .slide {
 	display: inline-block;
-	width: 30vw;
 	border-radius: 1rem;
 }
 
@@ -55,7 +59,6 @@
 
 .slide-caption .slide {
 	display: inline-block;
-	width: 30vw;
 	height: 100%;
 	padding-right: 11rem;
 }
