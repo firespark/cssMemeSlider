@@ -69,17 +69,27 @@
 }
 
 .navigation label {
-	display: inline-block;
-	width: 1rem;
-	height: 1rem;
-	margin: 0.3rem;
-    border-radius: 50%;
-	background-color: #b3b3b3;	
-	transition: background-color 0.6s ease;
-	cursor: pointer;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.1rem;
+    background-color: transparent;
+    cursor: pointer;    
 }
 
-.navigation label:hover {
+.navigation label span {
+	width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: #b3b3b3;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+    display: block;   
+}
+
+.navigation label:hover span {
 	background-color: #ffffff;
 }
 
@@ -103,9 +113,9 @@
 	transform: translateX(-75%);
 }
 
-#slide1:checked~.navigation #label-slide1,
-#slide2:checked~.navigation #label-slide2,
-#slide3:checked~.navigation #label-slide3,
-#slide4:checked~.navigation #label-slide4 {
+#slide1:checked~.navigation #label-slide1 span,
+#slide2:checked~.navigation #label-slide2 span,
+#slide3:checked~.navigation #label-slide3 span,
+#slide4:checked~.navigation #label-slide4 span {
 	background-color: #ffffff;
 }
