@@ -21,56 +21,47 @@
     <header></header>
 
     <main>
+    
         <div class="wrapper">
             <div class="slider-container">
-
-                <div class="slide" data-caption="Caption 1">
-                    <img src="img/1.jpeg">
+                <input type="radio" id="slide1" name="navigation-button" checked="checked" />
+                <input type="radio" id="slide2" name="navigation-button" />
+                <input type="radio" id="slide3" name="navigation-button" />
+                <input type="radio" id="slide4" name="navigation-button" />
+                <div class="slider-wrapper">
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="img/1.jpeg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="img/2.jpeg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="img/3.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="img/4.png" alt="">
+                        </div>
+                    </div>
                 </div>
-            
-                <div class="slide">
-                    <img src="img/2.jpeg">
+                <div class="slider-bottom">
+                    <div class="slide-caption">
+                        <div class="slide">Sweet ice cream</div>
+                        <div class="slide">Good team on safari trip</div>
+                        <div class="slide">That's how I love myself</div>
+                        <div class="slide">Finally you will love yourself</div>
+                    </div>
                 </div>
-            
-                <div class="slide">
-                    <img src="img/3.png">
-                </div>
-    
-                <div class="slide">
-                    <img src="img/4.jpeg">
-                </div>
-    
-                <div class="slide">
-                    <img src="img/5.jpeg">
-                </div>
-    
-                <div class="slide">
-                    <img src="img/6.png">
-                </div>
-                
-                <div class="slide">
-                    <img src="img/7.jpeg">
-                </div>
-                
-            </div>
-    
-            <div class="slider-bottom">
-                <div class="slide-caption">Caption 1</div>
                 <div class="navigation">
-                    <div class="dot active"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
+                    <label id="label-slide1" for="slide1"></label>
+                    <label id="label-slide2" for="slide2"></label>
+                    <label id="label-slide3" for="slide3"></label>
+                    <label id="label-slide4" for="slide4"></label>
                 </div>
             </div>
         </div>
-        
     </main>
-
     <footer></footer>
-
-    
-
-    <script src="js/index.js"></script>
 
 </body>
 

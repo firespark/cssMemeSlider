@@ -1,24 +1,18 @@
-@media (max-width: 1199px) {
-    .wrapper {
-        max-width: 70%;
-    }
-}
+@media screen and (max-width: 767px) {
 
-@media (max-width: 767px) {
-    .wrapper {
-        max-width: 100%;
-    }
+	.slider-container {
+		grid-template-areas:
+			'content'
+			'control'
+			'description';
+	}
 
-    .slider-bottom {
-        flex-direction: column-reverse;
-    }
+	.navigation {
+		justify-content: center;
+	}
 
-    .slide-caption {
-        margin-top: 10px;
-        text-align: center;        
-    }
 
-    .navigation {
-        text-align: center;        
-    }
+	.slide-caption .slide {
+		text-align: center;
+	}
 }
