@@ -27,11 +27,8 @@
 
 	.navigation {
 		justify-content: center;
+        margin-top: 1.5rem;
 	}
-
-    .slide-caption {
-        margin: 1rem 0;
-    }
 
 	.slide-caption .slide {
 		text-align: center;

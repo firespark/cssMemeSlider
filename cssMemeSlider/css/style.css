@@ -1,3 +1,9 @@
+header,
+footer {
+    padding: 2rem;
+    text-align: center;
+}
+
 .wrapper, 
 .slides .slide,
 .slide-caption .slide {
