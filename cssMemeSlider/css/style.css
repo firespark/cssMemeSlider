@@ -1,0 +1,131 @@
+h1 {
+	margin: 0;
+}
+
+header,
+footer {
+	padding: 1rem 0;
+	text-align: center;
+}
+
+.wrapper,
+.slides .slide,
+.slide-caption .slide {
+	width: 30vw;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 1.2rem;
+	border-radius: 1%;
+	background: #4a4848;
+}
+
+.slider-container {
+	display: grid;
+	grid-template-areas:
+		'content content'
+		'description control';
+	overflow: hidden;
+}
+
+.slider-container input {
+	display: none;
+}
+
+.slider-wrapper {
+	display: flex;
+	grid-area: content;
+	overflow: hidden;
+}
+
+.slides {
+	display: flex;
+	transition: transform 1s ease;
+}
+
+.slides .slide {
+	display: inline-block;
+	border-radius: 1rem;
+}
+
+.slides .slide img {
+	width: 100%;
+	border-radius: 1%;
+}
+
+
+.slider-bottom {
+	display: flex;
+	overflow: hidden;
+}
+
+.slide-caption {
+	display: flex;
+	padding: 1rem 0;
+	transition: transform 1s ease;
+	font-size: 1.3em;
+	color: #fff;
+}
+
+.slide-caption .slide {
+	display: inline-block;
+	height: 100%;
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+}
+
+.navigation label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0.1rem;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.navigation label span {
+	width: 0.7rem;
+	height: 0.7rem;
+	border-radius: 50%;
+	background-color: #b3b3b3;
+	transition: background-color 0.6s ease;
+	cursor: pointer;
+	display: block;
+}
+
+.navigation label:hover span {
+	background-color: #ffffff;
+}
+
+#slide1:checked~.slider-wrapper .slides,
+#slide1:checked~.slider-bottom .slide-caption {
+	transform: translateX(0);
+}
+
+#slide2:checked~.slider-wrapper .slides,
+#slide2:checked~.slider-bottom .slide-caption {
+	transform: translateX(-25%);
+}
+
+#slide3:checked~.slider-wrapper .slides,
+#slide3:checked~.slider-bottom .slide-caption {
+	transform: translateX(-50%);
+}
+
+#slide4:checked~.slider-wrapper .slides,
+#slide4:checked~.slider-bottom .slide-caption {
+	transform: translateX(-75%);
+}
+
+#slide1:checked~.navigation #label-slide1 span,
+#slide2:checked~.navigation #label-slide2 span,
+#slide3:checked~.navigation #label-slide3 span,
+#slide4:checked~.navigation #label-slide4 span {
+	background-color: #ffffff;
+}
